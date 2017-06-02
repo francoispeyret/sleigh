@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #00DE5D;
+}
+body .container {
+  width: 100%;
+  max-width: 1330px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+body svg#title {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+}
+body svg#decors {
+  position: relative;
+  z-index: 10;
+  margin: 0 auto 0;
+  width: 100%;
+  display: block;
+}
+body svg#decors #LUMIERE {
+  transform-origin: center bottom;
+}
+body #tag-sleigh {
+  position: relative;
+  z-index: 15;
+}
+body svg#svg-sleigh {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 15;
+  display: block;
+  margin-bottom: -150px;
+  margin-top: 40px;
+  fill: #fff;
+}
+@media (max-width: 950px) {
+  body svg#svg-sleigh {
+    margin-bottom: -100px;
+  }
+}
+@media (max-width: 750px) {
+  body svg#svg-sleigh {
+    width: 35%;
+    margin-bottom: -50px;
+  }
+}
+body h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: none;
+}
+body #social {
+  text-align: center;
+  display: block;
+  list-style: none;
+}
+body #social li {
+  display: inline-block;
+  margin: 0 3px;
+}
+body #social li a {
+  display: block;
+  padding: 10px;
+}
+body #social li a:hover svg {
+  transform: scale(1.1);
+}
+body #social li svg {
+  width: 40px;
+  height: 40px;
+  transition: all ease 0.3s;
+}

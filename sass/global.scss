@@ -1,0 +1,93 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #00DE5D;
+
+	.container {
+		width: 100%;
+		max-width: 1330px;
+		margin: 0 auto;
+		position: relative;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	svg#title {
+		width: 60%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	svg#decors {
+		position: relative;
+		z-index: 10;
+		margin: 0 auto 0;
+		width: 100%;
+		display: block;
+
+		#LUMIERE {
+			//opacity: 0;
+			transform-origin: center bottom;
+		}
+	}
+	#tag-sleigh {
+		position: relative;
+		z-index: 15;
+	}
+	svg#svg-sleigh {
+		width: 50%;
+		margin: 0 auto;
+		position: relative;
+		z-index: 15;
+		display: block;
+		margin-bottom: -150px;
+		margin-top: 40px;
+		fill:#fff;
+		@media (max-width: 950px) {
+			margin-bottom: -100px;
+		}
+		@media (max-width: 750px) {
+			width: 35%;
+			margin-bottom: -50px;
+		}
+	}
+
+	h1 {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		color: #fff;
+		font-family: sans-serif;
+		text-transform: uppercase;
+		font-weight: 300;
+		display: none;
+	}
+
+	#social {
+		text-align: center;
+		display: block;
+		list-style: none;
+		li {
+			display: inline-block;
+			margin: 0 3px;
+			a {
+				display: block;
+				padding: 10px;
+				&:hover {
+					svg {
+						transform: scale(1.1);
+					}
+				}
+			}
+			svg {
+				width: 40px;
+				height: 40px;
+				transition: all ease 0.3s;
+			}
+		}
+	}
+
+}

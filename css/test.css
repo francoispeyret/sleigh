@@ -1,0 +1,50 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+html body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+html body *,
+html body *:after,
+html body *:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: block;
+  background: #aaa;
+  height: 100vh;
+  position: relative;
+}
+section h1, section h2 {
+  font-size: 128px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+section#one {
+  background: url(../img/space.jpg) no-repeat center top fixed;
+  background-size: cover;
+}
+section#two {
+  background: url(../img/space.jpg) no-repeat center top fixed;
+  background-size: cover;
+}
+section#two:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: '';
+  background: url(../img/spacewhite.png) no-repeat center top;
+  background-size: cover;
+}
